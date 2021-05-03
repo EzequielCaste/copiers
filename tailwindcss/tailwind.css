@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+#__next {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#main {
+  position: relative;
+  height: 50vh;
+  background: url('/images/funciones1.jpg') no-repeat bottom center/cover;
+  /* background-position: 0px -50px; */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  /* max-width: 860px;
+  padding: 5rem 0; */
+}
+.nav-links li:hover {
+  background-color: #ffb000;
+}
+.contact-send {
+  background-color: #ffb000;
+}
+.contact-send:hover {
+  background-color: #ff9000;
+}
