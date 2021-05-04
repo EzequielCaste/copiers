@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Norwester';
+  src: url('/fonts/norwester.ttf');
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,6 +26,7 @@ body {
   /* background-position: 0px -50px; */
 }
 .overlay {
+  font-family: 'Norwester';
   position: absolute;
   top: 0;
   left: 0;
@@ -43,9 +49,38 @@ body {
 .nav-links li:hover {
   background-color: #ffb000;
 }
+.footer-links li,
+footer li {
+  color: rgba(249, 250, 251, 0.7);
+}
+footer a:hover {
+  color: #ffb000;
+}
+.footer-links li:hover {
+  color: #000;
+  background-color: #ffb000;
+}
+footer a {
+  text-decoration: underline;
+}
+.footer-links a {
+  text-decoration: none;
+}
+.card {
+  box-shadow: 4px 4px 5px 0px black;
+}
 .contact-send {
+  box-shadow: 2px 2px black;
   background-color: #ffb000;
 }
 .contact-send:hover {
   background-color: #ff9000;
+}
+.contact-send:disabled {
+  cursor: not-allowed;
+  background-color: #ff9000;
+}
+.fa-check,
+.fa-arrow-circle-up {
+  color: #ffb000;
 }

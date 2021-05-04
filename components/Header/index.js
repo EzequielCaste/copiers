@@ -8,7 +8,7 @@ const Header = () => {
     setMenu(!menu);
   };
   const btnClass =
-    'px-3 mr-1 text-2xl rounded bg-green-500 cursor-pointer text-white p-2';
+    'px-3 mr-1 text-2xl hover:text-gray-200 rounded bg-green-500 cursor-pointer text-white p-2';
   const linkStyle = 'p-4 transition duration-300 ease-in-out cursor-pointer';
   return (
     <header
@@ -73,11 +73,21 @@ const Header = () => {
         {menu && <div>hidden menu</div>}
       </nav>
       <div className="">
-        <a className={btnClass}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://wa.me/543874565222?text=Hola, te escribo desde https://www.AOcopiers.com.ar . Me gustaria obtener más información."
+          className={btnClass}
+        >
           <i className="fab fa-whatsapp"></i>
         </a>
-        <a className={`${btnClass} bg-blue-500`}>
-          <i className="fab fa-facebook-f"></i>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="mailto:ao_copiers@yahoo.com.ar"
+          className={`${btnClass} bg-blue-500`}
+        >
+          <i className="far fa-envelope"></i>
         </a>
       </div>
     </header>

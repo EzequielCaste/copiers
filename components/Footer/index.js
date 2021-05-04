@@ -1,53 +1,78 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
+  const linkStyle = 'p-1 transition duration-300 ease-in-out cursor-pointer';
   return (
-    <footer className="flex items-center justify-around text-sm mt-1 pt-5 ">
-      <div className="">
-        <strong>AO Copiers</strong>
-        <ul>
-          <li>Inicio</li>
-          <li>Sobre Nosotros</li>
-          <li>Servicios</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div className="">
-        <strong>Contacto</strong>
-        <ul className="space-y-1">
-          <li>
-            <i className="far fa-envelope"></i> ao_copiers@yahoo.com.ar
-          </li>
-          <li>
-            <i className="fas fa-map-marker-alt"></i> Dirección 945, Salta
-          </li>
-          <li>
-            <i className="fas fa-phone-alt"></i> +54 387 456 9187
-          </li>
-          <li>
-            <i className="fab fa-whatsapp"></i> +549 387 4565 222
-          </li>
-          <li>
-            <i className="fab fa-facebook"></i> facebook
-          </li>
-          <li>
-            <i className="fab fa-instagram"></i> instagram
-          </li>
-        </ul>
-      </div>
-      <div className="">
-        <ul>
-          <li>Aquí podría ir un mapa con la ubicación</li>
-          <li>Información Fiscal</li>
-          <li>
-            Nuestro horario de atención es de Lunes a Viernes de 8 a 13 y de 17
-            a 20; y los sábados de 9 a 13.
-          </li>
-          <li>Domingos y feriados cerrado.</li>
-          <li>Volver al inicio</li>
-        </ul>
-      </div>
-    </footer>
+    <>
+      <footer className="flex bg-gray-800 text-gray-50 shadow-2xl items-start justify-around text-md mt-20 py-16 ">
+        <div className="footer-links">
+          <h3 className="text-2xl">AO Copiers</h3>
+          <ul>
+            <li className={linkStyle}>
+              <Link href="/#home">Inicio</Link>
+            </li>
+            <li className={linkStyle}>
+              <Link href="#servicios">Nuestros Servicios</Link>
+            </li>
+            <li className={linkStyle}>
+              <a href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div className="">
+          <h3 className="text-2xl">Contacto</h3>
+          <ul className="space-y-2 mt-1.5">
+            <li className="cursor-pointer ">
+              <a href="mailto:ao_copiers@yahoo.com.ar">
+                <span>
+                  <i className="far fa-envelope"></i> ao_copiers@yahoo.com.ar
+                </span>
+              </a>
+            </li>
+            <li>
+              <i className="fas fa-map-marker-alt"></i> 12 de Octubre 351, Salta
+            </li>
+            <li>
+              <i className="fas fa-phone-alt"></i> +54 387 456 9187
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://wa.me/543874565222?text=Hola, te escribo desde https://www.AOcopiers.com.ar . Me gustaria obtener más información."
+              >
+                <span>
+                  <i className="fab fa-whatsapp"></i> +54 387 456 5222
+                </span>
+              </a>
+            </li>
+            {/* <li>
+              <i className="fab fa-facebook"></i> facebook
+            </li>
+            <li>
+              <i className="fab fa-instagram"></i> instagram
+            </li> */}
+          </ul>
+        </div>
+        <div className="">
+          <h3 className="text-2xl">Nuestro horario de atención</h3>
+          <ul className="space-y-2 mt-1.5 text-gray-50">
+            <li>Lunes a Viernes de 8 a 13 y de 17 a 20</li>
+            <li>Sábados de 9 a 13</li>
+            <li>Domingos y feriados cerrado.</li>
+          </ul>
+          <div className="mt-5 cursor-pointer p-2 w-max rounded-xl font-semibold ">
+            <Link href="/#home">
+              <i
+                title="Volver al Inicio"
+                className="border-white transform hover:scale-105 text-5xl fas fa-arrow-circle-up"
+              ></i>
+            </Link>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 };
 
