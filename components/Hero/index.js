@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section id="main" className="shadow-lg">
       <div className="overlay">
-        <div className="sm:text-2xl space-y-4 inner p-2.5 sm:p-16">
+        <div className="sm:text-2xl space-y-4 inner justify-around p-4 sm:p-16">
           <h1 className="font-bold text-4xl sm:text-7xl">AO Copiers</h1>
           <h2 className="mt-4">Alquiler y Venta de Equipos de Impresion</h2>
           {/* <h2 className="sm:text-lg">
@@ -33,12 +33,12 @@ const Hero = () => {
               <i className="far fa-envelope"></i>
             </a>
           </div>
-          <h2 className="sm:text-lg">
+          {/* <h2 className="sm:text-lg">
             <i className="fab fa-whatsapp"></i> +54 9 3874 56-5222
           </h2>
           <h2 className="sm:text-lg">
             <i className="far fa-envelope"></i> ao_copiers@yahoo.com.ar
-          </h2>
+          </h2> */}
         </div>
       </div>
     </section>
