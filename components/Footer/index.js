@@ -3,11 +3,12 @@ import React from 'react';
 
 const Footer = () => {
   const linkStyle = 'p-1 transition duration-300 ease-in-out cursor-pointer';
+  const title = 'text-base sm:text-2xl';
   return (
     <>
-      <footer className="flex bg-gray-800 text-gray-50 shadow-2xl items-start justify-around text-md mt-20 py-16 ">
+      <footer className="flex flex-col sm:flex-row bg-gray-800 text-gray-50 shadow-2xl items-start justify-around text-sm sm:text-md sm:mt-20 p-8 sm:py-16 ">
         <div className="footer-links">
-          <h3 className="text-2xl">AO Copiers</h3>
+          <h3 className={title}>AO Copiers</h3>
           <ul>
             <li className={linkStyle}>
               <Link href="/#home">Inicio</Link>
@@ -21,8 +22,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="">
-          <h3 className="text-2xl">Contacto</h3>
-          <ul className="space-y-2 mt-1.5">
+          <h3 className={title}>Contacto</h3>
+          <ul className="space-y-2 mt-1.5 sm:mt-0">
             <li className="cursor-pointer ">
               <a href="mailto:ao_copiers@yahoo.com.ar">
                 <span>
@@ -56,20 +57,20 @@ const Footer = () => {
           </ul>
         </div>
         <div className="">
-          <h3 className="text-2xl">Nuestro horario de atención</h3>
-          <ul className="space-y-2 mt-1.5 text-gray-50">
+          <h3 className={title}>Nuestro horario de atención</h3>
+          <ul className="space-y-2 mt-1.5 sm:mt-0 text-gray-50">
             <li>Lunes a Viernes de 8 a 13 y de 17 a 20</li>
             <li>Sábados de 9 a 13</li>
             <li>Domingos y feriados cerrado.</li>
           </ul>
-          <div className="mt-5 cursor-pointer p-2 w-max rounded-xl font-semibold ">
-            <Link href="/#home">
-              <i
-                title="Volver al Inicio"
-                className="border-white transform hover:scale-105 text-5xl fas fa-arrow-circle-up"
-              ></i>
-            </Link>
-          </div>
+        </div>
+        <div className="mx-auto mt-5 sm:mt-0 sm:mx-0 cursor-pointer p-2 w-max rounded-xl font-semibold ">
+          <Link href="/#home">
+            <i
+              title="Volver al Inicio"
+              className="border-white transform hover:scale-105 text-5xl fas fa-arrow-circle-up"
+            ></i>
+          </Link>
         </div>
       </footer>
     </>

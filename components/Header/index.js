@@ -7,8 +7,7 @@ const Header = () => {
   const toggleMenu = () => {
     setMenu(!menu);
   };
-  const btnClass =
-    'px-3 mr-1 text-2xl hover:text-gray-200 rounded bg-green-500 cursor-pointer text-white p-2';
+
   const linkStyle = 'p-4 transition duration-300 ease-in-out cursor-pointer';
   return (
     <header
@@ -22,7 +21,7 @@ const Header = () => {
         <li className={linkStyle}>
           <Link href="/#home">Inicio</Link>
         </li>
-        <li className={linkStyle}>
+        <li className={`${linkStyle} w-max`}>
           <Link href="#servicios">Nuestros Servicios</Link>
         </li>
         <li className={linkStyle}>
@@ -30,10 +29,10 @@ const Header = () => {
         </li>
       </nav>
       {/* hamburger Menu */}
-      <nav className="flex list-none w-auto mx-4 space-x-2">
+      <nav className="flex list-none w-auto mx-4">
         <button
           type="button"
-          className="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          className="sm:hidden inline-flex items-center justify-center p-2 rounded-md  text-white bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
           aria-controls="mobile-menu"
           aria-expanded="false"
           onClick={toggleMenu}
@@ -70,26 +69,22 @@ const Header = () => {
             />
           </svg>
         </button>
-        {menu && <div>hidden menu</div>}
+        {menu && (
+          <div className="absolute z-10 top-14 inset-x-1/2 bg-gray-700 transform -translate-x-2/4 p-2 py-20 text-center text-xl w-full">
+            <nav className="sm:flex list-none space-y-2 uppercase text-white">
+              <li onClick={toggleMenu}>
+                <Link href="/#home">Inicio</Link>
+              </li>
+              <li onClick={toggleMenu}>
+                <Link href="#servicios">Nuestros Servicios</Link>
+              </li>
+              <li onClick={toggleMenu}>
+                <a href="#contacto">Contacto</a>
+              </li>
+            </nav>
+          </div>
+        )}
       </nav>
-      <div className="">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://wa.me/543874565222?text=Hola, te escribo desde https://www.AOcopiers.com.ar . Me gustaria obtener más información."
-          className={btnClass}
-        >
-          <i className="fab fa-whatsapp"></i>
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="mailto:ao_copiers@yahoo.com.ar"
-          className={`${btnClass} bg-blue-500`}
-        >
-          <i className="far fa-envelope"></i>
-        </a>
-      </div>
     </header>
   );
 };

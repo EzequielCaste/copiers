@@ -7,8 +7,11 @@ const Layout = ({children}) => {
   return (
     <>
       <AOhead />
-      <Header />
-      {children}
+
+      <main className="max-w-screen-lg mx-auto">
+        <Header />
+        {children}
+      </main>
       <Footer />
     </>
   );

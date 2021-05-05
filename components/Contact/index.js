@@ -44,10 +44,10 @@ const Contact = () => {
   return (
     <div
       id="contacto"
-      className="rounded bg-gray-300 w-9/12 mx-auto p-10 text-lg"
+      className="rounded bg-gray-300 sm:w-9/12 mx-auto p-5 sm:p-10 sm:text-lg"
     >
       <form onSubmit={handleSubmit} className="flex flex-col items-center">
-        <h2 className="text-4xl font-bold">Contactenos</h2>
+        <h2 className="text-2xl sm:text-4xl font-bold">Contactenos</h2>
         <p className="py-4">
           Contáctese con nosotros para que podamos asesorarlo de acuerdo a sus
           necesidades.

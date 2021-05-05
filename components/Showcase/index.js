@@ -10,7 +10,7 @@ const Showcase = () => {
   };
 
   return (
-    <div className="relative w-10/12 mx-auto p-10">
+    <div className="relative sm:w-10/12 mx-auto p-10">
       <h2 className="text-4xl font-bold text-center">Producto Destacado</h2>
       <video autoPlay muted loop id="myVideo" style={myVideo}>
         <source src="/images/video_1.mp4" type="video/mp4" />
