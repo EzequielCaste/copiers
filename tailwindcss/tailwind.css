@@ -39,9 +39,9 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: center;
+  /* align-items: flex-start; */
+  /* justify-content: center;
+  text-align: center; */
   margin: auto;
   /* max-width: 860px;
   padding: 5rem 0; */
