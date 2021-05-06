@@ -17,10 +17,7 @@ const Header = () => {
       <img className="h-14" src="images/AO Copiers_cr.png" alt="AO Copiers" />
       {/* 605353 ffb000  */}
       {/* responsive Menu */}
-      <nav className="nav-links hidden sm:flex list-none w-auto mx-4 space-x-10 uppercase">
-        <li className={linkStyle}>
-          <Link href="/#home">Inicio</Link>
-        </li>
+      <nav className="nav-links hidden sm:flex list-none w-auto mx-4 space-x-10 uppercase">        
         <li className={`${linkStyle} w-max`}>
           <Link href="#servicios">Nuestros Servicios</Link>
         </li>
@@ -71,10 +68,7 @@ const Header = () => {
         </button>
         {menu && (
           <div className="absolute z-10 top-14 inset-x-1/2 bg-gray-700 transform -translate-x-2/4 p-2 py-20 text-center text-xl w-full">
-            <nav className="sm:flex list-none space-y-2 uppercase text-white">
-              <li onClick={toggleMenu}>
-                <Link href="/#home">Inicio</Link>
-              </li>
+            <nav className="sm:flex list-none space-y-2 uppercase text-white">              
               <li onClick={toggleMenu}>
                 <Link href="#servicios">Nuestros Servicios</Link>
               </li>
