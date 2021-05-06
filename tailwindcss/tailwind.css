@@ -53,9 +53,9 @@ body {
 footer li {
   color: rgba(249, 250, 251, 0.7);
 }
-footer a:hover {
+/* footer a:hover {
   color: #ffb000;
-}
+} */
 .footer-links li:hover {
   color: #000;
   background-color: #ffb000;

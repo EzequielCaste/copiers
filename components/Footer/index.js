@@ -3,10 +3,10 @@ import React from 'react';
 
 const Footer = () => {
   const linkStyle = 'p-1 transition duration-300 ease-in-out cursor-pointer';
-  const title = 'text-base sm:text-2xl';
+  const title = 'text-base mt-2 sm:text-2xl';
   return (
     <>
-      <footer className="flex flex-col sm:flex-row bg-gray-800 text-gray-50 shadow-2xl items-start justify-around text-sm sm:text-md sm:mt-20 p-8 sm:py-16 ">
+      <footer className="flex flex-col sm:flex-row bg-gray-800 text-gray-50 shadow-2xl sm:items-start sm:justify-around text-center text-sm sm:text-md sm:mt-20 p-8 sm:py-16 ">
         <div className="footer-links">
           <h3 className={title}>AO Copiers</h3>
           <ul>
@@ -15,9 +15,6 @@ const Footer = () => {
             </li>
             <li className={linkStyle}>
               <Link href="#servicios">Nuestros Servicios</Link>
-            </li>
-            <li className={linkStyle}>
-              <a href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
