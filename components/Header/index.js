@@ -14,18 +14,17 @@ const Header = () => {
       id="home"
       className="px-4 flex justify-between items-center shadow-lg w-full bg-white h-auto"
     >
-      <img className="h-14" src="images/AO Copiers_cr.png" alt="AO Copiers" />
-      {/* 605353 ffb000  */}
-      {/* responsive Menu */}
-      <nav className="nav-links hidden sm:flex list-none w-auto mx-4 space-x-10 uppercase">        
-        <li className={`${linkStyle} w-max`}>
-          <Link href="#servicios">Nuestros Servicios</Link>
-        </li>
-        <li className={linkStyle}>
-          <a href="#contacto">Contacto</a>
-        </li>
-      </nav>
-      {/* hamburger Menu */}
+      <div className="flex w-full justify-between ">
+        <img className="h-14" src="images/AO Copiers_cr.png" alt="AO Copiers" />
+        <nav className="nav-links items-center hidden sm:flex list-none w-auto mx-4 space-x-10 uppercase">
+          <li className={linkStyle}>
+            <Link href="#servicios">Nuestros Servicios</Link>
+          </li>
+          <li className={linkStyle}>
+            <a href="#contacto">Contacto</a>
+          </li>
+        </nav>
+      </div>
       <nav className="flex list-none w-auto mx-4">
         <button
           type="button"
@@ -68,7 +67,7 @@ const Header = () => {
         </button>
         {menu && (
           <div className="absolute z-10 top-14 inset-x-1/2 bg-gray-700 transform -translate-x-2/4 p-2 py-20 text-center text-xl w-full">
-            <nav className="sm:flex list-none space-y-2 uppercase text-white">              
+            <nav className="sm:flex list-none space-y-2 uppercase text-white">
               <li onClick={toggleMenu}>
                 <Link href="#servicios">Nuestros Servicios</Link>
               </li>
