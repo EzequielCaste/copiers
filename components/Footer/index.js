@@ -5,8 +5,8 @@ const Footer = () => {
   const linkStyle = 'p-1 transition duration-300 ease-in-out cursor-pointer';
   const title = 'text-base mt-2 sm:text-2xl';
   return (
-    <>
-      <footer className="flex flex-col sm:flex-row bg-gray-800 text-gray-50 shadow-2xl sm:items-start sm:justify-around text-center text-sm sm:text-md sm:mt-20 p-8 sm:py-16 ">
+    <footer className="bg-gray-800 text-gray-50 shadow-2xl text-center text-sm sm:text-md">
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-around  sm:mt-5 p-8 sm:py-16 ">
         <div className="footer-links">
           <h3 className={title}>AO Copiers</h3>
           <ul>
@@ -69,8 +69,12 @@ const Footer = () => {
             ></i>
           </Link>
         </div>
-      </footer>
-    </>
+      </div>
+      <p className="p-8">
+        &copy; 2021{' '}
+        <a href="http://ezecastellanos.com.ar">Ezequiel Castellanos</a>
+      </p>
+    </footer>
   );
 };
 
