@@ -4,7 +4,6 @@ import React from 'react';
 const AOhead = () => {
   return (
     <Head>
-      <title>AO Copiers | Alquiler de Fotocopiadoras e Impresoras</title>
       <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
       <link
         rel="icon"
@@ -18,6 +17,47 @@ const AOhead = () => {
         sizes="16x16"
         href="/favicon-16x16.png"
       />
+
+      <title>AO Copiers | Alquiler de Fotocopiadoras e Impresoras</title>
+      <meta
+        name="title"
+        content="AO Copiers | Alquiler de Fotocopiadoras e Impresoras"
+      />
+      <meta
+        name="description"
+        content="Alquiler y Venta de Equipos de Impresión, Insumos para fotocopiadoras. Servicio Técnico y Mantenimiento."
+      />
+
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:url"
+        content="https://copiers-ezequielcaste.vercel.app/"
+      />
+      <meta
+        property="og:title"
+        content="AO Copiers | Alquiler de Fotocopiadoras e Impresoras"
+      />
+      <meta
+        property="og:description"
+        content="Alquiler y Venta de Equipos de Impresión, Insumos para fotocopiadoras. Servicio Técnico y Mantenimiento."
+      />
+      <meta property="og:image" content="/logo_2.png" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta
+        property="twitter:url"
+        content="https://copiers-ezequielcaste.vercel.app/"
+      />
+      <meta
+        property="twitter:title"
+        content="AO Copiers | Alquiler de Fotocopiadoras e Impresoras"
+      />
+      <meta
+        property="twitter:description"
+        content="Alquiler y Venta de Equipos de Impresión, Insumos para fotocopiadoras. Servicio Técnico y Mantenimiento."
+      />
+      <meta property="twitter:image" content="/logo_2.png" />
+
       <link rel="manifest" href="/site.webmanifest" />
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#ffc40d" />
