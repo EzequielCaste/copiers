@@ -55,6 +55,7 @@ const Contact = () => {
         <label className={labelStyle}>Email</label>
         <div className="w-4/5">
           <input
+            autoComplete={false}
             required={true}
             onChange={handleInputChange}
             value={email}
@@ -67,6 +68,7 @@ const Contact = () => {
         <label className={labelStyle}>Message</label>
         <div className="w-4/5">
           <textarea
+            autoComplete={false}
             rows={8}
             required={true}
             onChange={handleInputChange}
