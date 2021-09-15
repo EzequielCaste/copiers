@@ -6,6 +6,7 @@ import Servicios from '../components/Servicios';
 import Showcase from '../components/Showcase';
 
 export default function Home() {
+  console.log(window.navigator.language);
   return (
     <Layout>
       <Hero />
